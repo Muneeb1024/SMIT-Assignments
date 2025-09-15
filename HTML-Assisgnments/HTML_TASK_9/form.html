@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Master Form</title>
+  
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7f7f7;
+      padding: 20px;
+    }
+    form {
+      background: #fff;
+      padding: 20px;
+      max-width: 600px;
+      margin: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    fieldset {
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      padding: 15px;
+      border-radius: 8px;
+    }
+    legend {
+      font-weight: bold;
+      color: #333;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input, select, textarea, button {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    input[type="radio"], input[type="checkbox"] {
+      width: auto;
+      margin-right: 8px;
+    }
+    button {
+      background: #007BFF;
+      color: white;
+      cursor: pointer;
+      border: none;
+      margin-top: 15px;
+    }
+    button:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <h2 style="text-align:center;">🚀 HTML Master Form</h2>
+
+  <form action="#" method="POST" enctype="multipart/form-data" autocomplete="off">
+
+    <!-- User Info -->
+    <fieldset>
+      <legend>👤 Personal Information</legend>
+      <label>Full Name:
+        <input type="text" name="fullname" placeholder="Enter your name" required>
+      </label>
+      <label>Email:
+        <input type="email" name="email" placeholder="example@email.com" required>
+      </label>
+      <label>Password:
+        <input type="password" name="password" placeholder="Choose a password" minlength="6" required>
+      </label>
+      <label>Age:
+        <input type="number" name="age" min="10" max="100">
+      </label>
+      <label>Birthday:
+        <input type="date" name="dob">
+      </label>
+    </fieldset>
+
+    <!-- Gender -->
+    <fieldset>
+      <legend>⚧ Gender</legend>
+      <label><input type="radio" name="gender" value="male"> Male</label>
+      <label><input type="radio" name="gender" value="female"> Female</label>
+      <label><input type="radio" name="gender" value="other"> Other</label>
+    </fieldset>
+
+    <!-- Country & City -->
+    <fieldset>
+      <legend>🌍 Location</legend>
+      <label>Country:
+        <select name="country" required>
+          <option value="">--Select Country--</option>
+          <optgroup label="Asia">
+            <option value="pakistan">Pakistan</option>
+            <option value="india">India</option>
+            <option value="china">China</option>
+          </optgroup>
+          <optgroup label="Europe">
+            <option value="uk">United Kingdom</option>
+            <option value="germany">Germany</option>
+          </optgroup>
+        </select>
+      </label>
+      <label>City:
+        <input list="cities" name="city" placeholder="Type or choose">
+        <datalist id="cities">
+          <option value="Karachi">
+          <option value="Lahore">
+          <option value="Hyderabad">
+          <option value="Islamabad">
+          <option value="Multan">
+        </datalist>
+      </label>
+    </fieldset>
+
+    <!-- File Upload -->
+    <fieldset>
+      <legend>📂 Upload</legend>
+      <label>Profile Picture:
+        <input type="file" name="profilePic" accept="image/*">
+      </label>
+    </fieldset>
+
+    <!-- Skills -->
+    <fieldset>
+      <legend>💡 Skills & Preferences</legend>
+      <label><input type="checkbox" name="skills" value="html"> HTML</label>
+      <label><input type="checkbox" name="skills" value="css"> CSS</label>
+      <label><input type="checkbox" name="skills" value="javascript"> JavaScript</label>
+      <label><input type="checkbox" name="skills" value="python"> Python</label>
+    </fieldset>
+
+    <!-- Feedback -->
+    <fieldset>
+      <legend>📝 Feedback</legend>
+      <label>Comments:
+        <textarea name="comments" rows="4" placeholder="Write your feedback..."></textarea>
+      </label>
+      <label>Rate Us:
+        <input type="range" name="rating" min="1" max="10">
+      </label>
+    </fieldset>
+
+    <!-- Hidden Input -->
+    <input type="hidden" name="formType" value="masterForm">
+
+    <!-- Buttons -->
+    <button type="submit">✅ Submit</button>
+    <button type="reset">🔄 Reset</button>
+
+  </form>
+
+</body>
+</html>
