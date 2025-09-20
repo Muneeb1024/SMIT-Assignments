@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup</title>
+    <link rel="stylesheet" href="../css-files/signup3.css" />
+  </head>
+
+  <body>
+    <header>
+      <span class="logo">
+        <a href="./login.html"
+          ><img src="../assets/images/logo.png" alt="Logo" width="50"
+        /></a>
+        <a href="./login.html">FITX</a>
+      </span>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./index.html">About</a></li>
+          <li><a href="./index.html">Contact</a></li>
+          <li><a href="./index.html">Pricing</a></li>
+        </ul>
+      </nav>
+
+      <div class="login_signup">
+        <a href="../html-files/login.html" class="login">Login</a>
+        <a href="../html-files/signup.html" class="signup">Register</a>
+      </div>
+    </header>
+
+    <main>
+      <video
+        class="gym-vid"
+        src="../assets/videos/gym.mp4"
+        muted
+        loop
+        autoplay
+      ></video>
+
+      <div class="forms">
+        <h2>Signup</h2>
+
+        <form
+          action="/"
+          method="POST"
+          enctype="multipart/form-data"
+          autocomplete="off"
+        >
+          <input
+            class="input"
+            type="text"
+            name="Job Title"
+            placeholder="Current job title"
+            required
+          />
+
+          <input
+            class="input"
+            type="number"
+            name="Experience"
+            placeholder="Enter years of experience"
+            required
+          />
+
+          <input
+            class="input"
+            type="month"
+            name="start month"
+          />
+
+          <input
+            class="input"
+            list="countries"
+            name="country"
+            placeholder="Select your skills"
+            required
+          />
+
+          <datalist id="countries">
+            <option value="HTML"></option>
+            <option value="Css"></option>
+            <option value="Javascriot"></option>
+            <option value="Typscript"></option>
+            <option value="Next.Js"></option>
+          </datalist>
+
+          <label class="file-contain">
+            <span>Upload Your Resume: </span>
+            <input type="file" name="Resume" required />
+          </label>
+
+          <a href="./signup4.html">Next</a>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <div class="foot-top-container">
+        <span class="logo">
+          <a href="./login.html"
+            ><img src="../assets/images/logo.png" alt="Logo" width="50"
+          /></a>
+          <a href="./login.html">FITX</a>
+        </span>
+
+        <nav>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./index.html">About</a></li>
+            <li><a href="./index.html">Contact</a></li>
+            <li><a href="./index.html">Pricing</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="foot-bottom-container">
+        <span>Website Created by Muneeb Lodhi</span>
+      </div>
+    </footer>
+  </body>
+</html>
