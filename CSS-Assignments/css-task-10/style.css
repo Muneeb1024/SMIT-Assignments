@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(49, 47, 47);
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+main {
+    display: flex;
+    width: 100%;
+}
+
+aside {
+    width: 25%;
+    background-color:rgb(237, 237, 237);
+    padding: 20px;
+}
+
+.main-area {
+    width: 75%;
+    background-color: white;
+    padding: 30px;
+    position: relative;
+
+}
+
+.side-bar {
+    width: 100%;
+    height: 450px;
+    background-color: rgb(49, 47, 47);
+    color: white;
+    border-radius: 14px;
+    padding: 20px;
+    diplay: flex;
+    flex-direction: column;
+    gap: 30px;
+    position: sticky;
+    top: 104px;
+}
+
+.side-bar ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.main-area .sticky-bar {
+    width: 100%;
+    height: 70px;
+    background-color: rgb(195, 184, 184);
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: sticky;
+    top: 110px;
+    z-index: 1;
+}
+
+.box1 {
+    width: 120px;
+    height: 120px;
+    background-color: rgb(255, 119, 0);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 60px;
+    right: 50px;
+}
+
+.box2 {
+    width: 270px;
+    height: 180px;
+    background-color: aqua;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 100px;
+
+}
+
+.container-contain {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.container {
+    width: 300px;
+    height: 200px;
+    background-color: rgb(195, 184, 184);
+    color: rgb(119, 113, 113);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
