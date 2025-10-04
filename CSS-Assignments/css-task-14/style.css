@@ -1,0 +1,133 @@
+/* Pseudo Classes */
+
+/* 1 :hover */
+/* 2 :active */
+/* 3 :focus */
+/* 4 :first-child  parent ke inside jo bhi first elemnent hoga wo select hoga */
+/* 5 :last-child  parent ke inside jo bhi last element hoga wo select hoga */
+/* 6 :nth-child(n) Selects an element based on its position in a parent */
+/* 7 :nth-of-type(n) Similar to :nth-child but only counts elements of a specific type */
+/* 8 :not(selector) sare elements ko style siwaye jo humne (isme likha) islo chorke*/
+/* 9 :checked For checkboxes/radio buttons when selected. */
+/* 10 :disabled / :enabled jab disabled ya enabled ho*/
+/* 11 :required / :optional  jab required ya optional ho*/
+
+/* <------------------------------------------------------------------------------------------> */
+
+/* Pseudo Elements */
+/* They are witten with double colons */
+/* 1 ::before Inserts virtual content before an element’s actual content.*/
+/* 2 ::after Inserts virtual content after an element’s actual content. */
+/* 3 ::first-letter Styles the first line of text in a block.*/
+/* 4 ::selection Selects the part of an element that is selected by the user. */
+/* 5 ::placeholder Selects the placeholder text of an input element. */
+/* 6 ::marker Styles the bullet/number in a list. */
+/* 7 ::file-selector-button Styles the file upload button in a file input. */
+
+/* <--------------------------------------------------------------------------------------------> */
+
+/* Practical */
+
+/* 1:hover */
+/* wo effect jab user jab user ispe cursor leker jae to hoga  */
+/* h1{
+    color: red;
+    text-align: center;
+    text-align: center;
+}
+h1:hover{
+color: blue;
+}
+p:hover{
+    background-color: aqua;
+}
+button:hover{
+font-size: 50px;
+}
+a:hover{
+color: red;
+} */
+
+/* 2:focus */
+/* jab tak apne kisi elemnent par click kia hua hai tab tak rahega  long duration*/
+/* h1{
+    color: red;
+    text-align: center;
+    text-align: center;
+}
+h1:focus{
+color: blue;
+}
+p:focus{
+    background-color: aqua;
+}
+button:focus{
+font-size: 50px;
+}
+a{
+    text-decoration: none ;
+}
+a:focus{
+color: red;
+}
+input:focus{
+    background-color: red;
+} */
+
+/* 2:active */
+/* jab user click kare us element par usi duration ta hi rahega only very short duration  */
+/* h1{
+    color: red;
+    text-align: center;
+    text-align: center;
+}
+h1:active{
+color: blue;
+}
+p:active{
+    background-color: aqua;
+}
+button:active{
+font-size: 50px;
+}
+a:active{
+color: red;
+}
+input:active{
+    background-color: red;
+} */
+
+
+
+/* h1:first-child{
+    background-color: red;
+} */
+
+/* h1:last-child{
+    background-color: red;
+} */
+
+
+/* h1:nth-child(n){
+    background-color: red;
+} */
+
+/* h1:nth-child(3){
+    background-color: red;
+} */
+
+/* h1:nth-of-type(3){
+    background-color: green;
+} */
+
+/* h1:not(.not){
+    background-color: red;
+} */
+
+/* span:empty{
+    border: 2px solid black;
+}  */
+
+
+
+
