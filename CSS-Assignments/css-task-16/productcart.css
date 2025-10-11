@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    width: 100%;
+    height: auto;
+    padding: 15px 30px;
+    background-color: #F1F2F4;
+
+}
+
+.top-deals-container {
+    width: 100%;
+    height: auto;
+    padding: 20px 30px;
+    margin: 20px auto;
+    background-color: #FFFFFF;
+}
+
+.top-deals-container>h2 {
+    color: #1f1f1f;
+    letter-spacing: 2pt;
+    margin-bottom: 20px;
+}
+
+.top-deals-child{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+}
+
+.top-deals-cart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    cursor: pointer;
+}
+
+.top-deals-cart-img {
+    width: 90%;
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-deals-cart-img > img {
+    /* width: 100%; */
+    /* height: 100%; */
+}
+
+.top-deals-cart-title {
+    text-align: center;
+    font-size: 14px;
+    color: #1f1f1f;
+    margin-top: 10px;
+}
+
+.top-deals-cart-price {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: #000000;
+}
