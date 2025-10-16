@@ -1,0 +1,322 @@
+/* HERO SECTION STYLING */
+.hero {
+    height: 500px;
+    background-color: #1ABC9C;
+    color: white;
+    text-align: center;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+}
+
+.profile {
+    background: url("../assets/profile.jpg");
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+.line {
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.line i {
+    font-size: 1.2rem;
+}
+
+.line>.lakeer {
+    width: 60px;
+    height: 3px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media screen and (min-width: 100px) and (max-width: 767px) {  
+
+.hero {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+    .hero h1 {
+    font-size: 1.5em;
+}
+.hero p {
+    font-size: 14px;
+}
+
+}
+/* PORTFOLIO SECTION STYLING */
+.portfolio {
+    background-color: white;
+    color: black;
+    padding: 70px 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.portfolio h1 {
+    font-size: 2.2em;
+}
+
+.line2 {
+    margin-bottom: 25px;
+}
+
+.line2 i {
+    color: black;
+
+}
+
+.line2>.lakeer {
+    background-color: black;
+}
+
+.portfolio-cart-contain {
+    display: grid;
+    grid-template-columns: repeat(3, 270px);
+    grid-template-rows: repeat(2, 200px);
+    place-content: center;
+    place-items: center;
+    gap: 20px;
+}
+
+.portfolio-cart {
+    width: 270px;
+    height: 200px;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.cart1 {
+    background-color: #BB4C65;
+}
+
+.cart2 {
+    background-color: #21A4B8;
+}
+
+.cart3 {
+    background-color: #140F10;
+}
+
+.cart4 {
+    background-color: #1E83C0;
+}
+
+.cart5 {
+    background-color: #1037B5;
+}
+
+.cart6 {
+    background-color: #CCB2A6;
+}
+
+.portfolio-cart-img {
+    background: url("../assets/portfolio-pic.png");
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.overlay {
+      position: absolute;
+      inset: 0;
+      background-color: rgba(26, 188, 156,0.95);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transition: all 0.4s ease;
+      font-size: 40px;
+    }
+
+.portfolio-cart:hover .overlay {
+      opacity: 1;
+    }
+
+
+@media screen and (min-width:100px) and (max-width:767px) {
+    
+.portfolio-cart-contain {
+    grid-template-columns: repeat(1, 270px);
+    grid-template-rows: repeat(2, 200px);
+    grid-auto-rows: 200px;
+}
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    
+.portfolio-cart-contain {
+    grid-template-columns: repeat(2, 270px);
+    grid-template-rows: repeat(2, 200px);
+    grid-auto-rows: 200px;
+}
+}
+
+
+/* ABOUT SECTION STYLING */
+.about {
+    background-color: #1ABC9C;
+    color: white;
+    padding: 70px 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.about h1 {
+    font-size: 2.2em;
+}
+.about-para-contain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}    
+
+.about-para-contain p{
+width: 330px;
+text-align: start;
+font-size: 14px;
+line-height: 22px;
+}
+
+.about-btn{
+    width: 200px;
+    height: 50px;
+border: 1.5px solid white;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: white;
+}
+.about-btn i,a{
+    color: inherit;
+}
+
+.about-btn:hover{
+    background-color: white;
+    color: #1ABC9C;
+}
+
+@media screen and (min-width:100px) and (max-width:767px) {
+    .about-para-contain{
+        flex-direction: column;
+    }
+    
+.about-para-contain p{
+width: 280px;
+text-align: start;
+font-size: 14px;
+line-height: 22px;
+}
+}
+
+
+/* CONTACT SECTION STYLING */
+.contact {
+    width: 100%;
+    background-color: white;
+    color: black;
+    padding: 70px 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.contact h1 {
+    font-size: 2.2em;
+}
+
+.contact form{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 0px 40px;
+    /* background-color: #1037B5; */
+}
+.contact form input,textarea{
+    max-width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid grey;
+    resize: none;
+    font-size: 1.1em;
+}
+.contact form input{
+    height: 40px;
+}
+.contact form button{
+    width: 100px;
+    height: 40px;
+    border: none;
+    background-color: #1ABC9C;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: all 0.4s ease;
+}
+.contact form button:hover{
+    background-color: white;
+    color: #1ABC9C;
+    border: 1px solid #1ABC9C;
+}
+
+
+
+@media screen and (min-width:100px) and (max-width:767px) {
+  
+.contact form{
+    width: 85%;
+}
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+.contact form{
+    width: 70%;
+ 
+}
+}

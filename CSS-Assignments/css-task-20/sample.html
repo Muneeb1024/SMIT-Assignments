@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Hover Overlay</title>
+  <style>
+    .box {
+      position: relative;
+      width: 250px;
+      height: 180px;
+      background: #ccc;
+      border-radius: 10px;
+      overflow: hidden;
+      margin: 50px auto;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    /* Hidden container (overlay) */
+    .overlay {
+      position: absolute;
+      inset: 0; /* top:0; left:0; right:0; bottom:0 */
+      background: rgba(0, 0, 0, 0.85);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    /* Show overlay on hover */
+    .box:hover .overlay {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box">
+    Original Content
+    <div class="overlay">
+      New Content on Hover 🚀
+    </div>
+  </div>
+
+</body>
+</html>
